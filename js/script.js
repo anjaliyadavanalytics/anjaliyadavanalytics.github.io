@@ -54,3 +54,14 @@ function typeEffect() {
 }
 
 typeEffect();
+document.getElementById("moreProjectsBtn").addEventListener("click", function () {
+
+    const hiddenProjects = document.querySelectorAll(".more-project");
+
+    hiddenProjects.forEach(function(project) {
+        project.style.display = "block";
+    });
+
+    this.style.display = "none";
+
+});

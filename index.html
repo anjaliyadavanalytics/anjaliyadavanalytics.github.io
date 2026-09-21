@@ -231,8 +231,64 @@ decision-making.
 <section id="projects" class="container py-5">
 <h2 class="section-title">Projects</h2>
 
+
 <div class="row g-4">
 
+<!-- ELECTRIC VEHICLE MARKET ANALYSIS -->
+<div class="col-md-4">
+
+    <div class="project-card">
+
+        <img src="images/electric-vehicle.jpg"
+             class="img-fluid"
+             alt="Electric Vehicle Market Analysis">
+
+        <h3>Electric Vehicle Market Analysis</h3>
+
+        <p>
+            Analyzed electric vehicle market trends,
+            sales performance, and key market insights
+            using Power BI.
+        </p>
+
+       <button
+    type="button"
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#evModal">
+    View Details
+</button>
+
+    </div>
+
+</div>
+<!-- ITR MANAGEMENT SYSTEM -->
+<div class="col-md-4">
+
+    <div class="project-card">
+
+        <img src="images/itr-management.jpg"
+             class="img-fluid"
+             alt="ITR Management System">
+
+        <h3>ITR Management System</h3>
+
+        <p>
+            Developed an ITR management system structure using python,MySQL,Tkinter
+            to organize and manage income tax return information.
+        </p>
+
+        <button
+    type="button"
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#itrModal">
+    View Details
+</button>
+
+    </div>
+
+</div>
 <div class="col-md-4">
 <div class="card project-card">
 
@@ -242,7 +298,7 @@ decision-making.
 <h4>HR Analytics Dashboard</h4>
 <p>
 Analyzed employee attrition and workforce metrics.
-Created KPIs and interactive visualizations.
+Created KPIs and interactive visualizations using Excel
 </p>
 
 <button 
@@ -255,7 +311,6 @@ View Details
 </div>
 </div>
 </div>
-
 <div class="col-md-4">
 <div class="card project-card">
   <img src="images/sales.jpg" alt="Sales Dashboard">
@@ -330,7 +385,7 @@ View Details
         </div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 more-project">
     <div class="card project-card">
       <img src="images/ecommerce.jpg" alt="Ecommerce Analysis">
         <div class="card-body">
@@ -350,7 +405,7 @@ View Details
         </div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 more-project">
     <div class="card project-card">
       <img src="images/netflix.jpg" alt="Netflix Analysis">
         <div class="card-body">
@@ -374,7 +429,26 @@ View Details
     </div>
 </div>
 
+
 </div>
+
+</section>
+</div>
+
+<div class="text-center mt-4">
+    <button
+        id="moreProjectsBtn"
+        class="btn btn-primary"
+        onclick="
+            document.querySelectorAll('.more-project').forEach(function(project) {
+                project.style.display = 'block';
+            });
+            this.style.display = 'none';
+        ">
+        More Dashboards
+    </button>
+</div>
+
 </section>
 
 
@@ -386,6 +460,8 @@ View Details
 
 
 <div class="education-card">
+    <h5>🎓 BCA (1st year)</h5>
+    <p>KLP College Rewari | 2026</p>
 
     <h5>🎓 Class XII (CBSE)</h5>
     <p>RPS Rewari | 2026</p>
@@ -444,38 +520,101 @@ View Details
 </section>
 
 <!-- Contact -->
-<section id="contact" class="bg-dark text-white py-5">
-<div class="container">
+<!-- Contact -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
 
-<h2>Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
 
-<p>
-I'm open to Data Analyst internships, freelance projects, and entry-level opportunities.
-</p>
+        <p class="contact-subtitle">
+            Have a project or job opportunity? Send me a message.
+        </p>
+
+        <div class="row g-4 mt-4">
+
+            <!-- Contact Information -->
+            <div class="col-md-5">
+                <div class="contact-info">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        I'm open to Data Analyst internships, freelance
+                        projects, and entry-level opportunities.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>📧 Email</strong>
+                        <p>yadavanjaliyadav1124@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📱 Phone</strong>
+                        <p>9416882507</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>💼 LinkedIn</strong>
+                        <p>
+                            <a href="https://linkedin.com/in/anjali-yadav-130628415"
+                               target="_blank">
+                                Visit LinkedIn Profile
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>🐙 GitHub</strong>
+                        <p>
+                            <a href="https://github.com/anjal1124/Data-analyst-portfolio.git"
+                               target="_blank">
+                                Visit GitHub
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
 
-<p>Email: yadavanjaliyadav1124@gmail.com</p>
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <div class="contact-form">
 
-<p>Phone: 9416882507</p>
+                    <form>
 
-<p>
-LinkedIn:
-<a href="https://linkedin.com/in/anjali-yadav-130628415"
-   target="_blank"
-   class="text-warning">
-   Visit Profile
-</a>
-</p>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required>
 
-<p>
-GitHub:
-<a href="https://github.com/anjal1124/Data-analyst-portfolio.git"
-   target="_blank"
-   class="text-warning">
-   Visit GitHub
-</a>
-</p>
-</div>
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Your Email"
+                            required>
+
+                        <textarea
+                            class="form-control"
+                            rows="6"
+                            placeholder="Your Message"
+                            required></textarea>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary w-100">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </section>
 
 <!-- Footer -->
@@ -504,8 +643,6 @@ GitHub:
 
         <h6>Tools & Technologies</h6>
         <ul>
-          <li>Power BI</li>
-          <li>DAX</li>
           <li>Power Query</li>
           <li>Excel</li>
         </ul>
@@ -524,12 +661,134 @@ GitHub:
    class="btn btn-primary">
    Open GitHub Repository
 </a>
-      </div>
-
-    </div>
-  </div>
+</div>
+</div>
 </div>
 <!-- HR Modal Ends Here -->
+</div>
+    <!-- Electric Vehicle Market Analysis Modal -->
+<div class="modal fade" id="evModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Electric Vehicle Market Analysis
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Tools & Technologies</h6>
+
+                <ul>
+                    <li>Power BI</li>
+                    <li>DAX</li>
+                    <li>Power Query</li>
+                    <li>Data Visualization</li>
+                </ul>
+
+                <h6>Key Features</h6>
+
+                <ul>
+                    <li>EV Sales Analysis</li>
+                    <li>Market Trend Analysis</li>
+                    <li>Vehicle Type Analysis</li>
+                    <li>Top Vehicle Models Analysis</li>
+                    <li>Geographic Sales Analysis</li>
+                    <li>Monthly Sales Trend</li>
+                    <li>Interactive Filters & Slicers</li>
+                </ul>
+
+                <h6>Project Link</h6>
+
+                <a
+                    href="https://github.com/anjaliyadavanalytics/Electric_vehicle_analysis"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Open GitHub Repository
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- EV Modal Ends Here -->
+ <!-- ITR Management System Modal -->
+<div class="modal fade" id="itrModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    ITR Management System
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Tools & Technologies</h6>
+
+                <ul>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>Tkinter</li>
+                    <li>Database Management</li>
+                </ul>
+
+                <h6>Key Features</h6>
+
+                <ul>
+                    <li>Client Information Management</li>
+                    <li>ITR Filing Information</li>
+                    <li>Tax Return Data Management</li>
+                    <li>Database Integration</li>
+                    <li>Client Record Management</li>
+                    <li>Income Tax Information Tracking</li>
+                </ul>
+
+                <h6>Project Link</h6>
+
+                <a
+                    href="https://github.com/anjaliyadavanalytics/ITR_Management_System"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Open GitHub Repository
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ITR Modal Ends Here -->
+
+   
 
 
 <!-- Paste Sales Modal Here -->
@@ -549,10 +808,10 @@ GitHub:
 
         <h6>Tools & Technologies</h6>
         <ul>
-          <li>Power BI</li>
-          <li>DAX</li>
-          <li>Power Query</li>
-          <li>Excel</li>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>Tkinter </li>
+          <li>Database management</li>
         </ul>
 
         <h6>Key Features</h6>
